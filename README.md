@@ -14,7 +14,7 @@ and you will be introduced to the tools like:
 - postman
 
 ## Presentation
-Presentation is available under [this link](https://gitlab.com/sda-international/program/java/15-http/wikis/uploads/5b1bcf706491336b1b0856da954e308d/13_HTTP.pdf)
+Presentation is available under [this link](https://gitlab.com/sda-international/program/java/15-http/-/wiki_pages/uploads/5b1bcf706491336b1b0856da954e308d/13_HTTP.pdf)
 
 # Further reading
 
