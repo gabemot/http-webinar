@@ -3,7 +3,7 @@
 Welcome to the **HTTP** module!
 
 During this module you will learn about HTTP, the protocol that is the foundation of data communication for the World Wide Web. <br>
-You will be able to understand how information is transfered between a client and a server and how different applications interact over the internet.
+You will be able to understand how information is transferred between a client and a server and how different applications interact over the internet.
 
 
 Some of the key topics that are going to be explained during this module are:
@@ -22,7 +22,36 @@ and you will be introduced to tools like:
 ## Presentation
 Presentation is available under [this link](https://gitlab.com/sda-international/program/java/15-http/wikis/uploads/5b1bcf706491336b1b0856da954e308d/13_HTTP.pdf)
 
+## Project setup
+Steps:
+1. Clone the repository on your laptop and import it in IntelliJ.
+2. Configure the database configuration - file ```application.properties```.
+3. Run the method ```main``` from ```Application.java```.
+
+### Examples
+Note: curl is available in git bash terminal.
+1. Get all cars: ```curl localhost:8080/api/cars```
+2. Create a car: ```curl -X POST -H "content-type: application/json" -d "{\"brand\": \"Ford\", \"model\":\"Focus\", \"engine\": \"2.0\", \"color\": \"black\"}" -k localhost:8080/api/cars```
+3. Update a car: ```curl -X PUT -H "content-type: application/json" -d "{\"brand\": \"Ford\", \"model\":\"Fiesta\", \"engine\": \"1.6\", \"color\": \"black\"}" -k localhost:8080/api/cars/1```
+4. Delete a car: ```curl -X DELETE -k localhost:8080/api/cars/1```
+
+
+### Exercises
+1. Using cURL and the API provided, call the GET method (/api/cars)
+2. Calling the POST method, add a new car (/api/cars). Check what GET returns.
+3. Calling the PUT method, modify the data of the added car (/api/cars/{id}). Check what
+   GET returns.
+4. Calling the DELETE method (/api/cars/{id}). Check what GET returns.
+
+## Examples using tools
+Open git bash and run the following commands:
+1. ```ssh bandit0@bandit.labs.overthewire.org -p 2220```. Use password *bandit0*. Now you are connected to a remote server via ssh. Type *exit* to terminate the ssh connection.
+    If you are interested to continue the game click [here](https://overthewire.org/wargames/bandit/bandit0.html).
+2. ```ping www.google.com```.
+3. ```wget -O wordpress.zip https://wordpress.org/latest.zip``` - download the resource.
+
 # Further reading
+**Colorful and detailed explanation of how dns works** https://howdns.works/.
 
 ## Books
 
