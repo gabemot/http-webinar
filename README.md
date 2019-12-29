@@ -50,6 +50,33 @@ Open git bash and run the following commands:
 2. ```ping www.google.com```.
 3. ```wget -O wordpress.zip https://wordpress.org/latest.zip``` - download the resource.
 
+## REST with JSON
+The following [website](https://jsonplaceholder.typicode.com/) provides several endpoints to exercise the CRUD operations on several
+resources.
+
+**Use ```-v``` parameter for curl command if you want to see the verbose output**.
+
+**Examples**
+1. Get all posts: ``` curl -X GET https://jsonplaceholder.typicode.com/posts```
+2. Get post with id 1: ``` curl -X GET https://jsonplaceholder.typicode.com/posts/1```
+3. Get all comments from post with id 1: ``` curl -X GET https://jsonplaceholder.typicode.com/posts/comments```
+4. Delete a post: ```curl -X GET https://jsonplaceholder.typicode.com/posts/1```
+Important: the resource will not be really deleted on the server but it will be faked as if.
+5. Create a post: ```curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X POST --data '{ "title":"test1", "body":"body test1","userId":1}' https://jsonplaceholder.typicode.com/posts```
+<br/>Important: the resource will not be really created on the server but it will be faked as if.
+<br/>If you try to get the created post you will get a 404 response status:
+```curl -v -X GET https://jsonplaceholder.typicode.com/posts/101```
+<br/> Look for ```HTTP/2 404```.
+6. Update a post: ``` curl -v -i -H "Accept: application/json" -H "Content-Type: application/json" -X PUT --data '{ "title":"test1", "body":"body test1","userId":1}' https://jsonplaceholder.typicode.com/posts/1```
+<br/>Important: the resource will not be really updated on the server but it will be faked as if.
+
+**Exercises**
+
+As shown in the above examples, use GET, DELETE, POST, PUT for the following resources:
+1. ```https://jsonplaceholder.typicode.com/albums```
+2. ```https://jsonplaceholder.typicode.com/users```
+3. ```https://jsonplaceholder.typicode.com/photos```
+
 # Further reading
 **Colorful and detailed explanation of how dns works** https://howdns.works/.
 
