@@ -66,7 +66,7 @@ Important: the resource will not be really deleted on the server but it will be 
 <br/>Important: the resource will not be really created on the server but it will be faked as if.
 <br/>If you try to get the created post you will get a 404 response status:
 ```curl -v -X GET https://jsonplaceholder.typicode.com/posts/101```
-<br/> Look for ```HTTP/2 404```.
+<br/> In the output look for ```HTTP/2 404```.
 6. Update a post: ``` curl -v -i -H "Accept: application/json" -H "Content-Type: application/json" -X PUT --data '{ "title":"test1", "body":"body test1","userId":1}' https://jsonplaceholder.typicode.com/posts/1```
 <br/>Important: the resource will not be really updated on the server but it will be faked as if.
 
