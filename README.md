@@ -25,7 +25,7 @@ Presentation is available under [this link](https://gitlab.com/sda-international
 ## Project setup
 Steps:
 1. Clone the repository on your laptop and import it in IntelliJ.
-2. Configure the database configuration - file ```application.properties```.
+2. No need to configure the database because it uses a H2 in-memory database.
 3. Run the method ```main``` from ```Application.java```.
 
 ### Examples
