@@ -20,7 +20,7 @@ and you will be introduced to tools like:
 - postman
 
 ## Presentation
-Presentation is available under [this link](https://gitlab.com/sda-international/program/java/15-http/wikis/uploads/5b1bcf706491336b1b0856da954e308d/13_HTTP.pdf)
+Presentation is available under [this link](https://gitlab.com/sda-international/program/java/http/-/wikis/uploads/3f94777a41f3759a11468e8bf25d4de3/HTTP.pdf)
 
 ## Project setup
 Steps:
